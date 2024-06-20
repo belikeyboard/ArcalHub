@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/bluelight</item>
+        <item name="colorPrimaryDark">@color/bluedark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@android:color/black</item>
+    </style>
+
+    <!-- Button style -->
+    <style name="ButtonStyle">
+        <item name="android:background">@drawable/button_background</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_marginTop">16dp</item>
+    </style>
+
+    <!-- Spinner style -->
+    <style name="SpinnerStyle">
+        <item name="android:background">@drawable/spinner_background</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">16dp</item>
+    </style>
+
+    <!-- EditText style -->
+    <style name="EditTextStyle">
+        <item name="android:background">@drawable/edit_text_background</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+    </style>
+
+</resources>

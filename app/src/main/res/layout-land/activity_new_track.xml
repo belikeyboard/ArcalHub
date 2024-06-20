@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewCollectionTrackActivity"
+    android:padding="16dp"
+    android:background="@color/bluedark">
+
+    <TextView
+        android:id="@+id/nameAPP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="ArcalHub"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/manageCollectionsActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New track"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/nameAPP"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/selectProjectText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Select project:"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@id/manageCollectionsActivity"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="50dp" />
+
+    <Spinner
+        android:id="@+id/projectSpinner"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        style="@style/SpinnerStyle"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/selectProjectText"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="50dp"/>
+
+    <TextView
+        android:id="@+id/selectEventText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Select event:"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@id/projectSpinner"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="50dp"/>
+
+    <Spinner
+        android:id="@+id/eventSpinner"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        style="@style/SpinnerStyle"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/selectEventText"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="50dp"/>
+
+    <TextView
+        android:id="@+id/selectTrackText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Insert track:"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@id/eventSpinner"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="50dp" />
+
+    <EditText
+        android:id="@+id/trackEditText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        style="@style/EditTextStyle"
+        android:hint="Enter new track"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/selectTrackText"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="50dp"/>
+
+    <Button
+        android:id="@+id/submitButton"
+        style="@style/ButtonStyle"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@id/projectSpinner"
+        app:layout_constraintTop_toBottomOf="@id/selectProjectText"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="80dp"/>
+
+    <Button
+        android:id="@+id/returnButton"
+        style="@style/ButtonStyle"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Return"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

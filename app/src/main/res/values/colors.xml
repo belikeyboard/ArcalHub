@@ -1,0 +1,15 @@
+<resources>
+    <color name="colorPrimary">#4CAF50</color>
+    <color name="colorPrimaryDark">#388E3C</color>
+    <color name="colorAccent">#FFC107</color>
+    <color name="purple_500">#4CAF50</color>
+    <color name="purple_700">#388E3C</color>
+    <color name="teal_200">#80CBC4</color>
+    <color name="teal_700">#00796B</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="purple_200">#BB86FC</color>
+    <color name="bluedark">#124672</color>
+    <color name="bluelight">#0C7CAF</color>
+    <color name="greylight">#dbe4e8</color>
+</resources>
